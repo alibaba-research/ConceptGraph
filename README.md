@@ -3,7 +3,6 @@
 [![License](https://img.shields.io/github/license/alibaba-research/ConceptGraph?style=flat-square)](https://github.com/alibaba-research/ConceptGraph/blob/master/LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/alibaba-research/ConceptGraph?style=flat-square)](https://github.com/alibaba-research/ConceptGraph/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/alibaba-research/ConceptGraph?style=flat-square&color=blueviolet)](https://github.com/alibaba-research/ConceptGraph/network/members)
-[![HitCount](http://hits.dwyl.io/alibaba-research/https://github.com/alibaba-research/ConceptGraph.svg)](http://hits.dwyl.io/alibaba-research/https://github.com/alibaba-research/ConceptGraph)
 
 ## Abstract 
 
@@ -12,7 +11,7 @@ Knowledge is important for text-related applications such as semantic search. Co
 
 ## What is Alibaba Cognitive Concept Graph
 
-In this paper, we introduce the Alibaba Conceptual Graph (AliCG), which is a large-scale conceptual graph of more than 5,000,000 fine-grained concepts, still in fast growth, automatically extracted from noisy search logs. As shown in Figure bellow, AliCG comprises four levels: **level-1** consists of concepts expressing the domain that those instances belong to;  **level-2** consists of concepts referred to the type or subclass of instances;  **level-3** consists of concepts that are the fine-grained conceptualization of instances expressing the implicit user intentions;  **instance layer** includes all instances such as entities and none-entity phrases.  AliCG is currently deployed at Alibaba to support a variety of business scenarios, including product Alibaba UC Browser.  AliCG has been applied to more than dozens of applications in Alibaba UC Browser, including intent classification, named entity recognition, query rewriting, and so on, and it receives more than 300 billion requests per day. 
+In this paper, we introduce the Alibaba Conceptual Graph (AliCG), which is a large-scale conceptual graph of more than 5,000,000 fine-grained concepts, still in fast growth, automatically extracted from noisy search logs. As shown in Figure bellow, AliCG comprises four levels: **level-1** consists of concepts expressing the domain that those instances belong to;  **level-2** consists of concepts referred to the type or subclass of instances;  **level-3** consists of concepts that are the fine-grained conceptualization of instances expressing the implicit user intentions;  **instance layer** includes all instances such as entities and none-entity phrases.  
 
  ![cg](figs/alicg.jpg)
 

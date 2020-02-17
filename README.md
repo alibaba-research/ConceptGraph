@@ -9,7 +9,7 @@
 Knowledge is important for text-related applications such as semantic search. Conceptual graphs, which is a particular type of Knowledge Graphs, plays an essential role in semantic search. Prior conceptual graph construction approaches typically extract high-frequent, coarse-grained, and time-invariant concepts from formal texts such as Wikipedia. In real applications, however, it is necessary to extract less-frequent, fine-grained, and time-varying conceptual knowledge and build taxonomy in an evolving manner.  In this paper, we introduce an approach to implementing and deploying the conceptual graph at Alibaba. Specifically, We propose a framework called **AliCG** which is capable of a) extracting fine-grained concepts by a novel bootstrapping with alignment consensus approach, b) mining long-tail concepts with a novel low-resource phrase mining approach, c) updating the graph dynamically via a concept distribution estimation method based on implicit and explicit user behaviors.   
 
 
-## What is Alibaba Cognitive Concept Graph
+## What is Alibaba Conceptual Graph
 
 In this paper, we introduce the Alibaba Conceptual Graph (AliCG), which is a large-scale conceptual graph of more than 5,000,000 fine-grained concepts, still in fast growth, automatically extracted from noisy search logs. As shown in Figure bellow, AliCG comprises four levels: **level-1** consists of concepts expressing the domain that those instances belong to;  **level-2** consists of concepts referred to the type or subclass of instances;  **level-3** consists of concepts that are the fine-grained conceptualization of instances expressing the implicit user intentions;  **instance layer** includes all instances such as entities and none-entity phrases.  
 
@@ -27,14 +27,14 @@ There are several related works, and we display them in the table below:
 | Tencent ConcepT | Yes |No|Static|
 | Alibaba  Conceptual Graph | Yes |Yes|Dynamic|
 
-## How do we construct? 
+## How to construct
 
 **First**, we propose a novel  **bootstrapping with the alignment consensus** approach to tackling the first challenge of extracting fine-grained concepts from noisy search logs. Specifically, we utilize a small number of predefined string patterns to extract concepts, which are then used to expand the pool of such patterns. Further, the new mined concepts are verified with query-title alignment; that is, an essential concept in a query should repeat several times in the document title frequently clicked by the user.  **Second**, we introduce a novel **conceptualized phrase mining and self-training with an ensemble consensus** approach to extract long-tail concepts. On the one hand, we extend the off-the-shelf phrase mining algorithm with conceptualized features to mine concepts unsupervisedly.  On the other hand, we propose a novel low-resource sequence tagging framework, namely, self-training with an ensemble consensus, to extract those scattered concepts.  **Finally**,  we propose a novel **concept distribution estimation method based on implicit and explicit user behaviors** to tackle the taxonomy evolution challenges. We employ concept alignment and take advantage of user's searching and clicking behaviors to estimate the implicit and explicit concept distributions to construct a four-layered concept--instance taxonomy in an evolving manner.  
 
  ![cg](figs/arc1.jpg)
 
 
-## How to use?
+## How to use
 
 The sample data of  conceptual graph is show bellow (separeted by \t):
 

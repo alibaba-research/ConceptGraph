@@ -27,14 +27,14 @@ There are several related works, and we display them in the table below:
 | Tencent ConcepT | Yes |No|Static|
 | Alibaba  Conceptual Graph | Yes |Yes|Dynamic|
 
-## How to construct
+## How to Construct
 
 **First**, we propose a novel  **bootstrapping with the alignment consensus** approach to tackling the first challenge of extracting fine-grained concepts from noisy search logs. Specifically, we utilize a small number of predefined string patterns to extract concepts, which are then used to expand the pool of such patterns. Further, the new mined concepts are verified with query-title alignment; that is, an essential concept in a query should repeat several times in the document title frequently clicked by the user.  **Second**, we introduce a novel **conceptualized phrase mining and self-training with an ensemble consensus** approach to extract long-tail concepts. On the one hand, we extend the off-the-shelf phrase mining algorithm with conceptualized features to mine concepts unsupervisedly.  On the other hand, we propose a novel low-resource sequence tagging framework, namely, self-training with an ensemble consensus, to extract those scattered concepts.  **Finally**,  we propose a novel **concept distribution estimation method based on implicit and explicit user behaviors** to tackle the taxonomy evolution challenges. We employ concept alignment and take advantage of user's searching and clicking behaviors to estimate the implicit and explicit concept distributions to construct a four-layered concept--instance taxonomy in an evolving manner.  
 
  ![cg](figs/arc1.jpg)
 
 
-## How to use
+## How to Use
 
 The sample data of  conceptual graph is show bellow (separeted by \t):
 

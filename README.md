@@ -68,6 +68,17 @@ We also pay high respect to the "predecessors" of the concept graph include [Yag
 
 This project is not the official product of Alibaba. The experimental results presented in the technical report only indicate the performance under the specific data set and super-parameter combination and do not represent the essence of each model. The experimental results may change due to random number seeds and computing devices. The content of this project is for technical research purposes only and is not intended to be a conclusive basis. The user may use the model arbitrarily within the scope of the license, but we are not responsible for any direct or indirect damages resulting from the use of the content of the project.
 
+## How to Cite
+
+```bibtex
+@inproceedings{zhang2021alicg,
+  title={AliCG: Fine-grained and Evolvable Conceptual Graph Construction for Semantic Search at Alibaba},
+  author={Zhang, Ningyu and Jia, Qianghuai and Deng, Shumin and Chen, Xiang and Ye, Hongbin and Chen, Hui and Tou, Huaixiao and Huang, Gang and Wang, Zhao and Hua, Nengwei and Chen, Huajun},
+  booktitle={KDD},
+  year={2021}
+}
+```
+
 ## References
 
 [1] ERNIE 2.0: A Continual Pretraining Framework for Language Understanding

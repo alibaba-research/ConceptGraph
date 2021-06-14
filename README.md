@@ -4,6 +4,8 @@
 [![GitHub stars](https://img.shields.io/github/stars/alibaba-research/ConceptGraph?style=flat-square)](https://github.com/alibaba-research/ConceptGraph/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/alibaba-research/ConceptGraph?style=flat-square&color=blueviolet)](https://github.com/alibaba-research/ConceptGraph/network/members)
 
+This repository includes the data of the KDD 2021 paper [AliCG: Fine-grained and Evolvable Conceptual Graph Construction for Semantic Search at Alibaba](https://arxiv.org/pdf/2106.01686.pdf).
+
 ## Abstract 
 
 Knowledge is important for text-related applications such as semantic search. Conceptual graphs, which is a particular type of Knowledge Graphs, plays an essential role in semantic search. Prior conceptual graph construction approaches typically extract high-frequent, coarse-grained, and time-invariant concepts from formal texts such as Wikipedia. In real applications, however, it is necessary to extract less-frequent, fine-grained, and time-varying conceptual knowledge and build taxonomy in an evolving manner.  In this paper, we introduce an approach to implementing and deploying the conceptual graph at Alibaba. Specifically, We propose a framework called **AliCG** which is capable of a) extracting fine-grained concepts by a novel bootstrapping with alignment consensus approach, b) mining long-tail concepts with a novel low-resource phrase mining approach, c) updating the graph dynamically via a concept distribution estimation method based on implicit and explicit user behaviors.   
